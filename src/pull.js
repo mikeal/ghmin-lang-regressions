@@ -1,4 +1,4 @@
-const pullData = require('../../pull-gharchive-minimized')
+const pullData = require('pull-gharchive-minimized')
 
 const onehour = 1000 * 60 * 60
 

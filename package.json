@@ -12,6 +12,7 @@
   "dependencies": {
     "brotli-max": "^0.1.1",
     "mkdirp": "^0.5.1",
+    "pull-gharchive-minimized": "^1.2.0",
     "yargs": "^14.2.0"
   }
 }
