@@ -6,6 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: mikeal/npx@master
-      run: npm install
+    - run: npm install
     - run: './cli.js day $(date --date="1 day ago" -I)'
