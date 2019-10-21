@@ -5,4 +5,8 @@ jobs:
     name: Pull Day
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
+    - uses: mikeal/npx@master
+      run: npm install
+    - uses: mikeal/npx@master
     - run: './cli.js day $(date --date="1 day ago" -I)'
