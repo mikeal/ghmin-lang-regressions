@@ -9,4 +9,4 @@ jobs:
     - uses: mikeal/npx@master
       run: npm install
     - uses: mikeal/npx@master
-    - run: './cli.js day $(date --date="1 day ago" -I)'
+      run: './cli.js day $(date --date="1 day ago" -I)'
