@@ -5,5 +5,4 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: Test
     - run: 'echo $(date --date="1 day ago" -I)'
