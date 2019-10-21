@@ -1,8 +1,8 @@
 on: push
-name: Build and Publish
+name: Daily
 jobs:
   build:
-    name: Build
+    name: Pull Day
     runs-on: ubuntu-latest
     steps:
-    - run: 'echo $(date --date="1 day ago" -I)'
+    - run: './cli.js day $(date --date="1 day ago" -I)'
