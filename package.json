@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (https://www.mikealrogers.com/)",
-  "license": "(Apache-2.0 AND MIT)"
+  "license": "(Apache-2.0 AND MIT)",
+  "dependencies": {
+    "brotli-max": "^0.1.1",
+    "mkdirp": "^0.5.1",
+    "yargs": "^14.2.0"
+  }
 }

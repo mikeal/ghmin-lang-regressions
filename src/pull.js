@@ -1,5 +1,4 @@
 const pullData = require('../../pull-gharchive-minimized')
-const { collection } = require('../reed-richards')
 
 const onehour = 1000 * 60 * 60
 
@@ -51,6 +50,7 @@ const pull = async (start, end, opts={}) => {
           if (event.commits) set('commits', lang, event.commits * share)
           if (share >= .4) {
             add('people', lang, event.type, event.actor)
+            add('repos', lang, event.type, event.repo)
           }
         }
       } else {
@@ -66,6 +66,7 @@ const pull = async (start, end, opts={}) => {
     }
   }
   toArray(results.people)
+  toArray(results.repos)
   return results
 }
 
