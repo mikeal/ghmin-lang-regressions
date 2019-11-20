@@ -1,5 +1,7 @@
-on: push
-name: Daily
+on:
+  schedule:
+    - cron:  '0 2 * * *'
+name: Daily Regression
 jobs:
   build:
     name: Pull Day
